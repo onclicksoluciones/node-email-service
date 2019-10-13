@@ -45,9 +45,9 @@ app.get('/upcoming/:dest/:msj', (request, response) => {
     response.status(200).send({ 'rte': request.params.rte, 'dest': request.params.dest, 'msj': request.params.msj });
 })
 
-app.set('port',process.env.PORT || 3000);
 
-app.listen(app.get('port'), () => {
-    console.log(`escuchando en puerto: ${app.get('port')}`);
+
+app.listen('3000', () => {
+    console.log(`escuchando en puerto: 3000`);
 
 })
