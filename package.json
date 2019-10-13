@@ -1,0 +1,13 @@
+{
+    "name": "my-awesome-package",
+    "version": "1.0.0",
+    "scripts":{
+        "start":"node index.js"
+        },
+    "dependencies": {
+        "async": "^3.1.0",
+        "express": "^4.17.1",
+        "nodemailer": "^6.3.1",
+        "request": "^2.88.0"
+    }
+}
