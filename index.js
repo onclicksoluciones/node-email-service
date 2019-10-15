@@ -21,13 +21,13 @@ app.get('/upcoming/:dest/:msj', (request, response) => {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'tuserviciodemail@gmail.com',
-            pass: '8989MAilService$426%&&'
+            user: '<emailForSentMgs@gmail.com>',
+            pass: '<password>'
         }
     });
 
     var mailOptions = {
-        from: 'tuserviciodemail@gmail.com',
+        from: '<emailForSentMgs@gmail.com>',
         to: destinatario,
         subject: 'nueva consulta de un cliente',
         text: mensaje
